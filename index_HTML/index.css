@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: "Pacifico", cursive;
+    flex-direction: column;
+    overflow: hidden;
+    animation: heartbeat 0.8s infinite;
+    position: relative;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+    color: #e91e63;
+    position: relative;
+    display: inline-block;
+  }
+  p {
+    font-size: 25px;
+    color: #555;
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 10px auto;
+  }
+  .btn {
+    background: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .btn:hover {
+    background: #c2185b;
+  }
+  .hidden {
+    display: none;
+  }
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: pulse 1s infinite;
+  }
+  #videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .heart-container {
+    position: relative;
+    display: inline-block;
+  }
+  .input-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .input-container input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  @keyframes moveAround {
+    0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+  }
+  .moving-heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: moveAround 5s linear infinite;
+  }
+  .heart-flying {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation: float 5s infinite linear;
+  }
+  audio {
+    color: pink;
+    margin: 20px;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    25% {
+      transform: translate(-50px, -100px);
+    }
+    50% {
+      transform: translate(50px, -200px);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translate(-50px, -300px);
+    }
+    100% {
+      transform: translate(50px, -400px);
+      opacity: 0;
+    }
+  }
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Ngày 8/3</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="input-container" id="inputContainer">
+      <input type="text" id="name" placeholder="Nhập họ và tên" />
+      <input type="date" id="dob" />
+      <button class="btn" onclick="startCelebration()">Nhấn để vào</button>
+    </div>
+    <div class="card" id="card">
+      <img class="a" src="./public/images/image-01.jpg" width="100px" alt="" />
+      <img class="a" src="./public/images/image-02.jpg" width="100px" alt="" />
+      <div class="heart-container">
+        <h1>Chúc Mừng Ngày Quốc Tế Phụ Nữ 8/3!</h1>
+      </div>
+      <p id="greetingMessage"></p>
+    </div>
+
+    <audio
+      id="bgMusic"
+      src="./public/music/bai_hat02.mp3"
+      controls
+      style="display: none"
+    ></audio>
+    <div  style="display: none;">
+        <video width="300" controls>
+        <source src="./video/video02.mp4" type="video/mp4">
+      </video> 
+      <video src="./video/video02.mp4" width="400px" controls></video>
+    <script src="./index.js"></script>
+  </body>
+</html> 
