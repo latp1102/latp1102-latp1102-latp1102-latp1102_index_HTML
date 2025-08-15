@@ -1,7 +1,7 @@
 function startCelebration() {
     let name = document.getElementById("name").value.trim();
     let dob = document.getElementById("dob").value;
-    if (name !== "Cao Thị Phương" || dob !== "2007-05-07") {
+    if (name !== "Cao Thị Phương" || dob !== "2007-07-05") {
       alert("Sai thông tin! Vui lòng nhập lại.");
       return;
     }
@@ -101,4 +101,5 @@ function startCelebration() {
     setInterval(createFloatingHearts, 1000);
   }
   
+
   
